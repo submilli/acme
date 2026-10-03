@@ -1,6 +1,6 @@
 # Billing
 
-Use `@acme/billing` to list the charges on one customer's account. The
+Use `@submilli/acme-billing` to list the charges on one customer's account. The
 package reads fixed data, so it needs no credential: it stands in for a
 real billing API in the Submilli book's examples.
 
@@ -11,7 +11,7 @@ A denial means the blueprint does not allow the customer asked for; do
 not retry with another id.
 
 ```ts
-import { listCharges } from "@acme/billing";
+import { listCharges } from "@submilli/acme-billing";
 
 function main(): string {
     const charges = listCharges("cus_northwind");

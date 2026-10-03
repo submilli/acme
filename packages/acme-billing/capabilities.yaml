@@ -1,4 +1,4 @@
-namespace: acme
+namespace: submilli
 provides:
 - name: acme.com/charges.list
   description: List the charges on one customer's account.

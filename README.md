@@ -2,16 +2,18 @@
 
 The example packages the [Submilli](https://github.com/submilli/submilli-runtime)
 book uses. Acme is the fictional company whose support agent the book
-follows.
+follows. The packages are scoped `@submilli/` because a package's scope
+must be the GitHub owner it is installed from; the `acme-` prefix keeps
+them apart from the curated ones.
 
 | Package | What it is |
 | --- | --- |
-| `@acme/billing` | A charge lookup over fixed data, standing in for a billing API. No credential needed. |
+| `@submilli/acme-billing` | A charge lookup over fixed data, standing in for a billing API. No credential needed. |
 
 Install one into your local store:
 
 ```sh
-submilli install submilli/acme @acme/billing
+submilli install submilli/acme @submilli/acme-billing
 ```
 
 Build and test from a checkout:

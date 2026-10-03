@@ -1,4 +1,4 @@
-# @acme/billing
+# @submilli/acme-billing
 
 Lists the charges on one customer's account, over fixed data. It stands
 in for a real billing API in the Submilli book's examples, so it needs
@@ -15,13 +15,13 @@ variables:
   customerId:
     required: true
 packages:
-- '@acme/billing'
+- '@submilli/acme-billing'
 permissions:
   main:
   - capability: acme.com/charges.list
     filter: customerId == ${vars.customerId}
     action: allow
-  '@acme/billing': []
+  '@submilli/acme-billing': []
 ```
 
 The package's own list is empty: it reads nothing and calls nothing.
